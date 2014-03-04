@@ -14,12 +14,13 @@ class PointsControllerTest extends ControllerTestCase {
  */
 	public $fixtures = array(
 		'app.point',
+		'app.player',
 		'app.source',
 		'app.event',
 		'app.league',
 		'app.team',
 		'app.user',
-		'app.points_team',
+		'app.players_team',
 		'app.tag',
 		'app.leagues_tag'
 	);

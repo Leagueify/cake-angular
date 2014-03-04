@@ -1,11 +1,11 @@
 <?php
-App::uses('SourcesController', 'Controller');
+App::uses('PlayersTeamsController', 'Controller');
 
 /**
- * SourcesController Test Case
+ * PlayersTeamsController Test Case
  *
  */
-class SourcesControllerTest extends ControllerTestCase {
+class PlayersTeamsControllerTest extends ControllerTestCase {
 
 /**
  * Fixtures
@@ -13,16 +13,16 @@ class SourcesControllerTest extends ControllerTestCase {
  * @var array
  */
 	public $fixtures = array(
+		'app.players_team',
+		'app.player',
 		'app.source',
 		'app.event',
 		'app.league',
 		'app.team',
 		'app.user',
-		'app.player',
-		'app.point',
-		'app.players_team',
 		'app.tag',
-		'app.leagues_tag'
+		'app.leagues_tag',
+		'app.point'
 	);
 
 /**

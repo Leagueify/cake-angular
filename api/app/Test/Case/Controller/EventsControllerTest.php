@@ -15,13 +15,14 @@ class EventsControllerTest extends ControllerTestCase {
 	public $fixtures = array(
 		'app.event',
 		'app.source',
+		'app.player',
 		'app.point',
 		'app.team',
 		'app.league',
 		'app.tag',
 		'app.leagues_tag',
 		'app.user',
-		'app.points_team'
+		'app.players_team'
 	);
 
 /**

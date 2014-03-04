@@ -37,9 +37,9 @@ class UserFixture extends CakeTestFixture {
 			'taunt' => 'Lorem ipsum dolor sit amet',
 			'email' => 'Lorem ipsum dolor sit amet',
 			'password' => 'Lorem ipsum dolor sit amet',
-			'last_login' => '2014-02-26 04:50:20',
-			'created' => '2014-02-26 04:50:20',
-			'updated' => '2014-02-26 04:50:20'
+			'last_login' => '2014-03-04 03:10:49',
+			'created' => '2014-03-04 03:10:49',
+			'updated' => '2014-03-04 03:10:49'
 		),
 	);
 

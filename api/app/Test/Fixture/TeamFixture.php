@@ -34,8 +34,8 @@ class TeamFixture extends CakeTestFixture {
 			'name' => 'Lorem ipsum dolor sit amet',
 			'league_id' => 1,
 			'user_id' => 1,
-			'created' => '2014-02-26 04:50:20',
-			'updated' => '2014-02-26 04:50:20'
+			'created' => '2014-03-04 03:10:48',
+			'updated' => '2014-03-04 03:10:48'
 		),
 	);
 

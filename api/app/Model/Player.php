@@ -1,13 +1,13 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Team Model
+ * Player Model
  *
- * @property League $League
- * @property User $User
- * @property Player $Player
+ * @property Source $Source
+ * @property Point $Point
+ * @property Team $Team
  */
-class Team extends AppModel {
+class Player extends AppModel {
 
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
@@ -18,16 +18,9 @@ class Team extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'League' => array(
-			'className' => 'League',
-			'foreignKey' => 'league_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'User' => array(
-			'className' => 'User',
-			'foreignKey' => 'user_id',
+		'Source' => array(
+			'className' => 'Source',
+			'foreignKey' => 'source_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
@@ -35,16 +28,38 @@ class Team extends AppModel {
 	);
 
 /**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public $hasMany = array(
+		'Point' => array(
+			'className' => 'Point',
+			'foreignKey' => 'player_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
+
+
+/**
  * hasAndBelongsToMany associations
  *
  * @var array
  */
 	public $hasAndBelongsToMany = array(
-		'Player' => array(
-			'className' => 'Player',
+		'Team' => array(
+			'className' => 'Team',
 			'joinTable' => 'players_teams',
-			'foreignKey' => 'team_id',
-			'associationForeignKey' => 'player_id',
+			'foreignKey' => 'player_id',
+			'associationForeignKey' => 'team_id',
 			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',

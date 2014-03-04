@@ -37,11 +37,11 @@ class LeagueFixture extends CakeTestFixture {
 			'name' => 'Lorem ipsum dolor sit amet',
 			'logo' => 'Lorem ipsum dolor sit amet',
 			'motto' => 'Lorem ipsum dolor sit amet',
-			'started_date' => '2014-02-26 04:50:19',
+			'started_date' => '2014-03-04 03:10:44',
 			'event_id' => 1,
 			'public' => 1,
-			'created' => '2014-02-26 04:50:19',
-			'updated' => '2014-02-26 04:50:19'
+			'created' => '2014-03-04 03:10:44',
+			'updated' => '2014-03-04 03:10:44'
 		),
 	);
 

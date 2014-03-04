@@ -18,8 +18,9 @@ class SourceTest extends CakeTestCase {
 		'app.league',
 		'app.team',
 		'app.user',
+		'app.player',
 		'app.point',
-		'app.points_team',
+		'app.players_team',
 		'app.tag',
 		'app.leagues_tag'
 	);

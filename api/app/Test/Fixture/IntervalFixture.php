@@ -30,8 +30,8 @@ class IntervalFixture extends CakeTestFixture {
 		array(
 			'id' => 1,
 			'name' => 'Lorem ipsum dolor sit amet',
-			'created' => '2014-02-26 04:50:19',
-			'updated' => '2014-02-26 04:50:19'
+			'created' => '2014-03-04 03:10:43',
+			'updated' => '2014-03-04 03:10:43'
 		),
 	);
 

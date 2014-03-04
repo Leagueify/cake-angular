@@ -59,9 +59,8 @@ class PointsController extends AppController {
 				$this->Session->setFlash(__('The point could not be saved. Please, try again.'));
 			}
 		}
-		$sources = $this->Point->Source->find('list');
-		$teams = $this->Point->Team->find('list');
-		$this->set(compact('sources', 'teams'));
+		$players = $this->Point->Player->find('list');
+		$this->set(compact('players'));
 	}
 
 /**
@@ -107,9 +106,8 @@ class PointsController extends AppController {
 			$options = array('conditions' => array('Point.' . $this->Point->primaryKey => $id));
 			$this->request->data = $this->Point->find('first', $options);
 		}
-		$sources = $this->Point->Source->find('list');
-		$teams = $this->Point->Team->find('list');
-		$this->set(compact('sources', 'teams'));
+		$players = $this->Point->Player->find('list');
+		$this->set(compact('players'));
 	}
 
 /**

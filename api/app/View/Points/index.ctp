@@ -4,7 +4,7 @@
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('name'); ?></th>
-			<th><?php echo $this->Paginator->sort('source_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('player_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('value'); ?></th>
 			<th><?php echo $this->Paginator->sort('date'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
@@ -16,7 +16,7 @@
 		<td><?php echo h($point['Point']['id']); ?>&nbsp;</td>
 		<td><?php echo h($point['Point']['name']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($point['Source']['name'], array('controller' => 'sources', 'action' => 'view', $point['Source']['id'])); ?>
+			<?php echo $this->Html->link($point['Player']['name'], array('controller' => 'players', 'action' => 'view', $point['Player']['id'])); ?>
 		</td>
 		<td><?php echo h($point['Point']['value']); ?>&nbsp;</td>
 		<td><?php echo h($point['Point']['date']); ?>&nbsp;</td>
@@ -48,9 +48,7 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Point'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Sources'), array('controller' => 'sources', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Source'), array('controller' => 'sources', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Teams'), array('controller' => 'teams', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Team'), array('controller' => 'teams', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Players'), array('controller' => 'players', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Player'), array('controller' => 'players', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

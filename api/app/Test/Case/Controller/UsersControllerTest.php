@@ -18,8 +18,9 @@ class UsersControllerTest extends ControllerTestCase {
 		'app.league',
 		'app.event',
 		'app.source',
+		'app.player',
 		'app.point',
-		'app.points_team',
+		'app.players_team',
 		'app.tag',
 		'app.leagues_tag'
 	);

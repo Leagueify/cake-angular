@@ -32,8 +32,8 @@ class SourceFixture extends CakeTestFixture {
 			'id' => 1,
 			'name' => 'Lorem ipsum dolor sit amet',
 			'url' => 'Lorem ipsum dolor sit amet',
-			'created' => '2014-02-26 04:50:20',
-			'updated' => '2014-02-26 04:50:20'
+			'created' => '2014-03-04 03:10:47',
+			'updated' => '2014-03-04 03:10:47'
 		),
 	);
 

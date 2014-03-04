@@ -1,11 +1,11 @@
 <?php
-App::uses('Team', 'Model');
+App::uses('Player', 'Model');
 
 /**
- * Team Test Case
+ * Player Test Case
  *
  */
-class TeamTest extends CakeTestCase {
+class PlayerTest extends CakeTestCase {
 
 /**
  * Fixtures
@@ -13,16 +13,16 @@ class TeamTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.team',
-		'app.league',
-		'app.event',
-		'app.source',
 		'app.player',
-		'app.point',
+		'app.source',
+		'app.event',
+		'app.league',
+		'app.team',
+		'app.user',
 		'app.players_team',
 		'app.tag',
 		'app.leagues_tag',
-		'app.user'
+		'app.point'
 	);
 
 /**
@@ -32,7 +32,7 @@ class TeamTest extends CakeTestCase {
  */
 	public function setUp() {
 		parent::setUp();
-		$this->Team = ClassRegistry::init('Team');
+		$this->Player = ClassRegistry::init('Player');
 	}
 
 /**
@@ -41,7 +41,7 @@ class TeamTest extends CakeTestCase {
  * @return void
  */
 	public function tearDown() {
-		unset($this->Team);
+		unset($this->Player);
 
 		parent::tearDown();
 	}

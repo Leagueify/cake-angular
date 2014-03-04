@@ -1,9 +1,9 @@
 <?php
 /**
- * LeaguesTagFixture
+ * PlayersTeamFixture
  *
  */
-class LeaguesTagFixture extends CakeTestFixture {
+class PlayersTeamFixture extends CakeTestFixture {
 
 /**
  * Fields
@@ -12,8 +12,8 @@ class LeaguesTagFixture extends CakeTestFixture {
  */
 	public $fields = array(
 		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
-		'league_id' => array('type' => 'integer', 'null' => true, 'default' => null),
-		'tag_id' => array('type' => 'integer', 'null' => true, 'default' => null),
+		'player_id' => array('type' => 'integer', 'null' => true, 'default' => null),
+		'team_id' => array('type' => 'integer', 'null' => true, 'default' => null),
 		'created' => array('type' => 'datetime', 'null' => true, 'default' => null),
 		'updated' => array('type' => 'datetime', 'null' => true, 'default' => null),
 		'indexes' => array(
@@ -30,10 +30,10 @@ class LeaguesTagFixture extends CakeTestFixture {
 	public $records = array(
 		array(
 			'id' => 1,
-			'league_id' => 1,
-			'tag_id' => 1,
-			'created' => '2014-03-04 03:10:44',
-			'updated' => '2014-03-04 03:10:44'
+			'player_id' => 1,
+			'team_id' => 1,
+			'created' => '2014-03-04 03:10:46',
+			'updated' => '2014-03-04 03:10:46'
 		),
 	);
 

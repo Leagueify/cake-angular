@@ -34,10 +34,10 @@ class EventFixture extends CakeTestFixture {
 			'id' => 1,
 			'name' => 'Lorem ipsum dolor sit amet',
 			'source_id' => 1,
-			'last_update' => '2014-02-26 04:50:18',
+			'last_update' => '2014-03-04 03:10:42',
 			'last_error' => 'Lorem ipsum dolor sit amet',
-			'created' => '2014-02-26 04:50:18',
-			'updated' => '2014-02-26 04:50:18'
+			'created' => '2014-03-04 03:10:42',
+			'updated' => '2014-03-04 03:10:42'
 		),
 	);
 

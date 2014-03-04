@@ -4,7 +4,7 @@ App::uses('AppModel', 'Model');
  * Source Model
  *
  * @property Event $Event
- * @property Point $Point
+ * @property Player $Player
  */
 class Source extends AppModel {
 
@@ -30,8 +30,8 @@ class Source extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		),
-		'Point' => array(
-			'className' => 'Point',
+		'Player' => array(
+			'className' => 'Player',
 			'foreignKey' => 'source_id',
 			'dependent' => false,
 			'conditions' => '',

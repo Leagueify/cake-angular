@@ -1,12 +1,12 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * PointsTeam Model
+ * PlayersTeam Model
  *
- * @property Point $Point
+ * @property Player $Player
  * @property Team $Team
  */
-class PointsTeam extends AppModel {
+class PlayersTeam extends AppModel {
 
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
@@ -17,9 +17,9 @@ class PointsTeam extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Point' => array(
-			'className' => 'Point',
-			'foreignKey' => 'point_id',
+		'Player' => array(
+			'className' => 'Player',
+			'foreignKey' => 'player_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

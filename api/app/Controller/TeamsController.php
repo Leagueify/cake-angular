@@ -61,8 +61,8 @@ class TeamsController extends AppController {
 		}
 		$leagues = $this->Team->League->find('list');
 		$users = $this->Team->User->find('list');
-		$points = $this->Team->Point->find('list');
-		$this->set(compact('leagues', 'users', 'points'));
+		$players = $this->Team->Player->find('list');
+		$this->set(compact('leagues', 'users', 'players'));
 	}
 
 /**
@@ -110,8 +110,8 @@ class TeamsController extends AppController {
 		}
 		$leagues = $this->Team->League->find('list');
 		$users = $this->Team->User->find('list');
-		$points = $this->Team->Point->find('list');
-		$this->set(compact('leagues', 'users', 'points'));
+		$players = $this->Team->Player->find('list');
+		$this->set(compact('leagues', 'users', 'players'));
 	}
 
 /**
